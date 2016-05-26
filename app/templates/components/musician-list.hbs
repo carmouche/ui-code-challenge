@@ -2,6 +2,9 @@
 
 <ul>
   {{#each model.musicians as |musician|}}
-    <li>{{musician.firstName}} {{musician.lastName}}</li>
+    <li>
+    	<h3>{{musician.firstName}} {{musician.lastName}}</h3>
+    	<h4>Band: </h4> <p>{{musician.bandName}}</p>
+    </li>
   {{/each}}
 </ul>
