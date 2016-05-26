@@ -1,10 +1,18 @@
 <h2>{{title}}</h2>
 
-<ul>
+<ul class="musician-list">
+  <li class="heading">
+  	<div class="col">Musician</div>
+  	<div class="col">Band</div>
+  </li>
   {{#each model.musicians as |musician|}}
     <li>
-    	<h3>{{musician.firstName}} {{musician.lastName}}</h3>
-    	<h4>Band: </h4> <p>{{musician.bandName}}</p>
+    	<div class="col">
+    		<p>{{musician.firstName}} {{musician.lastName}}</p>
+    	</div>
+    	<div class="col">
+    		<p>{{musician.bandName}}</p>
+    	</div>
     </li>
   {{/each}}
 </ul>

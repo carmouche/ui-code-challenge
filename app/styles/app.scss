@@ -1,0 +1,68 @@
+$white: #FFF;
+$black: #000;
+$bgcolor: #2f1e54;
+$textcolor: #9bf2e0;
+
+body {
+	background-color: $bgcolor;
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+	color: $textcolor;
+	text-align: center;
+	font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
+h1, h2 {
+	margin-bottom: 10px;
+}
+
+a, p {
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+button {
+	color: inherit;
+	font-size: inherit;
+	padding: 10px;
+	background: $black;
+	border: 0;
+	cursor: pointer;
+}
+
+.musician-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	max-width: 500px;
+	width: 80%;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+
+	p {
+		margin: 0;
+	}
+
+	li {
+		background-color: rgba($white, 0.1);
+		flex-grow: 1;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.heading {
+		.col {
+			background-color: $black;
+		}
+	}
+	
+	.col {
+		width: 50%;
+		padding: 5px;
+	}
+}
